@@ -325,4 +325,3 @@ final class GithubAdapterTest extends TestCase
         $this->assertTrue(true);
     }
 }
-
