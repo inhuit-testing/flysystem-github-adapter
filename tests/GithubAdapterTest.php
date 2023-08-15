@@ -7,9 +7,9 @@ namespace Inhuit\FlysystemGithubAdapter;
 use Github\Api\GitData;
 use Github\Api\Repo;
 use Github\Api\Repository\Contents;
+use PHPUnit\Framework\Attributes\TestWith;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use PHPUnit\Framework\Attributes\TestWith;
 
 final class GithubAdapterTest extends TestCase
 {

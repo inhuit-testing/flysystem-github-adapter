@@ -2,11 +2,8 @@
 
 namespace Inhuit\FlysystemGithubAdapter;
 
-use DateTimeImmutable;
 use Github\Api\GitData;
 use Github\Api\Repo;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Carbon;
 use League\Flysystem\Config;
 use League\Flysystem\DirectoryAttributes;
 use League\Flysystem\FileAttributes;
@@ -340,7 +337,7 @@ class GithubAdapter implements FilesystemAdapter
         }
 
         try {
-            $datetime = DateTimeImmutable::createFromFormat(
+            $datetime = \DateTimeImmutable::createFromFormat(
                 'YYYY-MM-DDTHH:MM:SSZ',
                 $commit[0]['commit']['committer']['date']
             );

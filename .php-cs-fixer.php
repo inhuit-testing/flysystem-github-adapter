@@ -13,6 +13,7 @@ return $config
     ->setRules([
         '@PSR12' => true,
         '@PSR12:risky' => true,
+        '@Symfony' => true,
     ])
     ->setFinder($finder)
     ->setLineEnding("\r\n")
