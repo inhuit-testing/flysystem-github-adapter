@@ -29,10 +29,10 @@
     },
     "scripts": {
         "cs-fix": [
-            "php-cs-fixer fix -v --allow-risky=yes"
+            "php-cs-fixer --ansi fix -v --allow-risky=yes"
         ],
         "test": [
-            "php-cs-fixer fix -v --allow-risky=yes --dry-run --stop-on-violation",
+            "php-cs-fixer --ansi fix -v --allow-risky=yes --dry-run --stop-on-violation",
             "phpunit --colors=always --do-not-cache-result"
         ]
     }
