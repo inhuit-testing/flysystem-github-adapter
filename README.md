@@ -1,0 +1,1 @@
+# GitHub adapter for Flysystem
